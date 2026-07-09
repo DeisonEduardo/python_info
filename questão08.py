@@ -1,4 +1,4 @@
-while True:  # Repete o programa todo até digitar 0
+while True:
     print('''*** Calculadora de Números Reais ***
 1. Soma
 2. Subtração
@@ -9,12 +9,10 @@ print("*" * 30)
 
     esc = int(input("Escolha a opção desejada: "))
 
-    # Verifica se o usuário quer encerrar
     if esc == 0:
         print("Programa encerrado! Até logo.")
-        break  # Interrompe o laço e fecha o programa
+        break
 
-    # Verifica se a opção é uma operação válida
     if esc == 1 or esc == 2 or esc == 3 or esc == 4:
         n1 = float(input("Digite o primeiro número: "))
         n2 = float(input("Digite o segundo número: "))
@@ -33,4 +31,4 @@ print("*" * 30)
     else:
         print("Operação Inválida. Tente novamente!")
 
-    print("-" * 30)  # Linha separadora entre operações
+    print("-" * 30)
